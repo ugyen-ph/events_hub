@@ -18,7 +18,59 @@
   </header>
 
   <main>
-    <!-- page content here -->
+    <form action="#" method="post" enctype="multipart/form-data" id="regForm">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <label for="fullname">Full name</label>
+        <input type="text" id="fullname" name="fullname">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email">
+        <label for="phone">Phone</label>
+        <input type="text" id="phone" name="phone">
+      </fieldset>
+
+      <fieldset>
+        <legend>Event Choice</legend>
+        <label for="event_id">Event</label>
+        <select id="event_id" name="event_id">
+          <option value="">-- choose an event --</option>
+          <option value="1">Tech Week Hackathon</option>
+          <option value="2">Losar Festival Night</option>
+          <option value="3">Inter-College Football</option>
+        </select>
+
+        <p>Food preference:</p>
+        <input type="radio" id="veg" name="food" value="veg">
+        <label for="veg">Vegetarian</label>
+        <input type="radio" id="nonveg" name="food" value="nonveg">
+        <label for="nonveg">Non-vegetarian</label>
+
+        <p>Interested in:</p>
+        <input type="checkbox" id="volunteer" name="interests" value="volunteer">
+        <label for="volunteer">Volunteering</label>
+        <input type="checkbox" id="perform" name="interests" value="perform">
+        <label for="perform">Performing</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Other</legend>
+        <label for="department">Department</label>
+        <select id="department" name="department">
+          <option value="it">Information Technology</option>
+          <option value="civil">Civil</option>
+          <option value="electrical">Electrical</option>
+        </select>
+
+        <label for="remarks">Remarks</label>
+        <textarea id="remarks" name="remarks" rows="4"></textarea>
+
+        <label for="id_card">Student ID card (image)</label>
+        <input type="file" id="id_card" name="id_card">
+      </fieldset>
+
+      <button type="submit">Register</button>
+      <button type="reset">Clear</button>
+    </form>
   </main>
 
   <footer>
