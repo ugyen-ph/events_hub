@@ -68,3 +68,39 @@ li::marker { color: #059669; }
 a[target="_blank"] { color: #d97706; }
 input[type="file"] { border: 1px dashed #94a3b8; padding: 8px; }
 input[type="text"] { border: 1px solid #cbd5e1; padding: 8px; }
+
+/* C1 — font-family and font-size */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 16px;
+}
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+
+/* C2 — font-weight, line-height, letter-spacing */
+h1 { font-weight: 700; }
+body { line-height: 1.6; }
+.hero-title {
+  letter-spacing: 0.04em;
+  word-spacing: 0.1em;
+}
+em { font-style: italic; }
+
+/* C3 — indent, align, decorate */
+.intro p {
+  text-indent: 2em;
+  text-align: justify;
+}
+nav a { text-decoration: none; }
+.sold-out {
+  text-decoration: line-through;
+  text-decoration-color: #ef4444;
+  text-decoration-style: solid;
+}
+h2 { text-align: left; }
+
+/* C4 — colour: named, hex, RGB */
+body { color: rgb(30, 41, 59); }      /* RGB */
+h2 { color: #0369a1; }  /* same as rgb(3, 105, 161)               /* hexadecimal */
+.highlight { color: crimson; }         /* named */
+header { background-color: #0f172a; }
