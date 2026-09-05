@@ -127,4 +127,13 @@ nav a {
 .event-card { display: block; }
 
 
+/* Part F — responsive images and media query */
+img { max-width: 100%; height: auto; }
 
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 4px 0;
+  }
+  body { font-size: 15px; }
+}
