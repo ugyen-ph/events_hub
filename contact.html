@@ -21,32 +21,56 @@
   </header>
 
   <main>
-    <h2>Get in Touch</h2>
-    <p>JNEC Events Hub<br>
-    Jigme Namgyel Engineering College<br>
-    Dewathang, Samdrup Jongkhar, Bhutan</p>
+    <div class="container py-4">
+      <h2 class="mb-4">Get in Touch</h2>
 
-    <p>Email: <a href="mailto:events@jnec.edu.bt">events@jnec.edu.bt</a></p>
-    <p>Phone: +975-77123456</p>
+      <div class="card mb-4">
+        <div class="card-body">
+          <p class="card-text">
+            JNEC Events Hub<br>
+            Jigme Namgyel Engineering College<br>
+            Dewathang, Samdrup Jongkhar, Bhutan
+          </p>
+          <p class="card-text">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:events@jnec.edu.bt">events@jnec.edu.bt</a>
+          </p>
+          <p class="card-text">
+            <i class="fa-solid fa-phone"></i> +975-77123456
+          </p>
+        </div>
+      </div>
 
-    <h2>Find Us</h2>
-    <iframe
-      src="https://www.openstreetmap.org/export/embed.html?bbox=91.44,26.85,91.48,26.88"
-      width="400" height="250" title="Campus map"></iframe>
+      <h2 class="mb-3">Find Us</h2>
+      <div class="card mb-4">
+        <div class="card-body">
+          <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=91.44,26.85,91.48,26.88"
+            width="100%" height="250" title="Campus map" style="border:0;"></iframe>
+        </div>
+      </div>
 
-    <h2>Send an Enquiry</h2>
-    <form action="#" method="post">
-      <label for="cname">Name</label>
-      <input type="text" id="cname" name="cname">
-
-      <label for="cemail">Email</label>
-      <input type="text" id="cemail" name="cemail">
-
-      <label for="cmessage">Message</label>
-      <textarea id="cmessage" name="cmessage" rows="4"></textarea>
-
-      <button type="submit">Send</button>
-    </form>
+      <h2 class="mb-3">Send an Enquiry</h2>
+      <div class="card">
+        <div class="card-body">
+          <form action="#" method="post">
+            <div class="mb-3">
+              <label for="cname" class="form-label">Name</label>
+              <input type="text" class="form-control" id="cname" name="cname">
+            </div>
+            <div class="mb-3">
+              <label for="cemail" class="form-label">Email</label>
+              <input type="text" class="form-control" id="cemail" name="cemail">
+            </div>
+            <div class="mb-3">
+              <label for="cmessage" class="form-label">Message</label>
+              <textarea class="form-control" id="cmessage" name="cmessage" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer>
