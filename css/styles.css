@@ -1,0 +1,30 @@
+/* FILE: css/styles.css — shared by all Events Hub pages */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  color: #1e293b;
+  background: #f8fafc;
+}
+
+header {
+  background: #0f172a;
+  color: white;
+  padding: 16px 24px;
+}
+
+nav a {
+  color: #7dd3fc;
+  margin-right: 12px;
+  text-decoration: none;
+}
+
+footer {
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 16px 24px;
+  margin-top: 40px;
+}
+
+main {
+  padding: 24px;
+}
