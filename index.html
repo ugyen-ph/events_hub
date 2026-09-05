@@ -21,36 +21,55 @@
   </header>
 
   <main>
-    <section id="welcome" class="intro">
-      <h2>Welcome</h2>
-      <p>The <strong>Events Hub</strong> lists every upcoming event at
-      <em>Jigme Namgyel Engineering College</em>.
-      <span class="highlight" title="Registrations close 3 days before each event">
-      Register early!</span></p>
-      <img src="media/campus.jpg" alt="JNEC campus" width="400"
-           title="Our campus in Dewathang">
-    </section>
+    <div id="eventCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="media/banner1.jpg" class="d-block w-100" alt="Campus event banner 1">
+        </div>
+        <div class="carousel-item">
+          <img src="media/banner2.jpg" class="d-block w-100" alt="Campus event banner 2">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#eventCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
-    <section id="location">
-      <h2>Find Us</h2>
-      <iframe
-        src="https://www.openstreetmap.org/export/embed.html?bbox=91.44,26.85,91.48,26.88"
-        width="400" height="250" title="Campus map"></iframe>
-    </section>
+    <div class="container py-4">
+      <section id="welcome" class="intro">
+        <h2>Welcome</h2>
+        <p>The <strong>Events Hub</strong> lists every upcoming event at
+        <em>Jigme Namgyel Engineering College</em>.
+        <span class="highlight">Register early!</span></p>
+        <img src="media/campus.jpg" alt="JNEC campus" class="img-fluid">
+      </section>
 
-    <section id="clubs">
-      <h2>Our Clubs</h2>
-      <dl>
-        <dt>Robotics Club</dt>
-        <dd>Builds and programs robots for inter-college competitions.</dd>
+      <section id="location">
+        <h2>Find Us</h2>
+        <iframe
+          src="https://www.openstreetmap.org/export/embed.html?bbox=91.44,26.85,91.48,26.88"
+          width="400" height="250" title="Campus map"></iframe>
+      </section>
 
-        <dt>Music Club</dt>
-        <dd>Organizes performances and jam sessions on campus.</dd>
+      <section id="clubs">
+        <h2>Our Clubs</h2>
+        <dl>
+          <dt>Robotics Club</dt>
+          <dd>Builds and programs robots for inter-college competitions.</dd>
 
-        <dt>Photography Club</dt>
-        <dd>Covers college events and runs photo-walks around Dewathang.</dd>
-      </dl>
-    </section>
+          <dt>Music Club</dt>
+          <dd>Organizes performances and jam sessions on campus.</dd>
+
+          <dt>Photography Club</dt>
+          <dd>Covers college events and runs photo-walks around Dewathang.</dd>
+        </dl>
+      </section>
+    </div>
   </main>
 
   <footer>
