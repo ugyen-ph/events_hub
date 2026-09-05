@@ -116,3 +116,14 @@ section {
   margin-bottom: 28px;
   padding-left: 8px;
 }
+
+/* Part E — display properties */
+nav a {
+  display: inline-block;
+  padding: 8px 16px;
+}
+.admin-only { display: none; }
+.badge { display: inline; }
+.event-card { display: block; }
+
+nav a:first-child { display: none; }
