@@ -28,3 +28,43 @@ footer {
 main {
   padding: 24px;
 }
+
+/* simple selectors */
+h1 { color: #0f172a; }            /* element */
+.intro { background: #f8fafc; }    /* class   */
+#welcome { padding: 24px; }        /* id      */
+p.intro { font-size: 1.05rem; }    /* element.class */
+h1, h2, h3 { font-family: Georgia, serif; }  /* grouping */
+
+/* combinators */
+nav a { text-decoration: none; }         /* descendant */
+main > section { margin-bottom: 24px; }  /* child      */
+h2 + p { font-style: italic; }           /* adjacent   */
+h2 ~ p { color: #334155; }               /* general sibling */
+
+/* pseudo-classes */
+nav a:hover { color: #38bdf8; }
+input:focus { outline: 2px solid #0369a1; }
+input:checked + label { font-weight: 700; }
+tr:nth-child(even) { background: #f1f5f9; }
+
+/* anchor LVHA order */
+a:link { color: #0369a1; }
+a:visited { color: #7c3aed; }
+a:hover { color: #0ea5e9; }
+a:active { color: #b91c1c; }
+
+/* pseudo-elements */
+p::first-line { font-weight: bold; }
+.intro::first-letter {
+  font-size: 1.6em;
+  color: #0369a1;
+}
+h2::before { content: "★ "; color: #d97706; }
+li::marker { color: #059669; }
+::selection { color: #7f1d1d; background: #fde68a; }
+
+/* attribute selectors */
+a[target="_blank"] { color: #d97706; }
+input[type="file"] { border: 1px dashed #94a3b8; padding: 8px; }
+input[type="text"] { border: 1px solid #cbd5e1; padding: 8px; }
