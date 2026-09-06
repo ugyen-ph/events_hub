@@ -137,3 +137,12 @@ img { max-width: 100%; height: auto; }
   }
   body { font-size: 15px; }
 }
+
+/* Activity 5 — my own original selectors */
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+} /* adds a shadow effect when hovering over any Bootstrap card, for a subtle interactive feel */
+
+a[href^="mailto:"] {
+  font-weight: 600;
+} /* bolds any link whose href starts with "mailto:", making email links stand out */
