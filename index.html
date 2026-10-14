@@ -11,6 +11,7 @@
 <body>
   <header id="top">
     <h1>JNEC Events Hub</h1>
+    <button type="button" id="darkToggle" class="btn btn-sm btn-outline-light">Dark mode</button>
     <nav>
       <a href="index.html" title="Go to home page">Home</a>
       <a href="events.html">Events</a>
@@ -55,6 +56,11 @@
         <iframe
           src="https://www.openstreetmap.org/export/embed.html?bbox=91.44,26.85,91.48,26.88"
           width="400" height="250" title="Campus map"></iframe>
+      </section>
+
+      <section id="featured">
+        <h2>Featured events</h2>
+        <div class="row g-3" id="home-events"></div>
       </section>
 
       <section id="clubs">

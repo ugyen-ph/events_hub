@@ -29,14 +29,17 @@
           <div class="mb-3">
             <label for="fullname" class="form-label">Full name</label>
             <input type="text" class="form-control" id="fullname" name="fullname">
+            <span id="err-fullname" class="error"></span>
           </div>
           <div class="mb-3">
             <label for="email" class="form-label">Email</label>
             <input type="text" class="form-control" id="email" name="email">
+            <span id="err-email" class="error"></span>
           </div>
           <div class="mb-3">
             <label for="phone" class="form-label">Phone</label>
             <input type="text" class="form-control" id="phone" name="phone">
+            <span id="err-phone" class="error"></span>
           </div>
         </fieldset>
 
@@ -49,8 +52,10 @@
               <option value="1">Tech Week Hackathon</option>
               <option value="2">Losar Festival Night</option>
               <option value="3">Inter-College Football</option>
-              <option value="4">Cultural Night</option>
+              <option value="4">Robotics Workshop</option>
             </select>
+            <span id="err-event_id" class="error"></span>
+            <p id="seatsHint" class="seats-hint mt-2">Choose an event to see remaining seats.</p>
           </div>
 
           <p>Food preference:</p>
@@ -62,6 +67,7 @@
             <input class="form-check-input" type="radio" id="nonveg" name="food" value="nonveg">
             <label class="form-check-label" for="nonveg">Non-vegetarian</label>
           </div>
+          <span id="err-food" class="error"></span>
 
           <p>Interested in:</p>
           <div class="form-check">
@@ -72,6 +78,7 @@
             <input class="form-check-input" type="checkbox" id="perform" name="interests" value="perform">
             <label class="form-check-label" for="perform">Performing</label>
           </div>
+          <span id="err-interests" class="error"></span>
         </fieldset>
 
         <fieldset class="mb-4">
@@ -87,7 +94,8 @@
 
           <div class="mb-3">
             <label for="remarks" class="form-label">Remarks</label>
-            <textarea class="form-control" id="remarks" name="remarks" rows="4"></textarea>
+            <textarea class="form-control" id="remarks" name="remarks" rows="4" maxlength="200"></textarea>
+            <span id="charCount" class="text-muted">0/200</span>
           </div>
 
           <div class="mb-3">
