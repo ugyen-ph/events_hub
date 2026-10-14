@@ -101,7 +101,7 @@ h2 { text-align: left; }
 
 /* C4 — colour: named, hex, RGB */
 body { color: rgb(30, 41, 59); }      /* RGB */
-h2 { color: #0369a1; }  /* same as rgb(3, 105, 161)               /* hexadecimal */
+h2 { color: #0369a1; }  /* same as rgb(3, 105, 161) */ /* hexadecimal */
 .highlight { color: crimson; }         /* named */
 header { background-color: #0f172a; }
 
@@ -126,7 +126,6 @@ nav a {
 .badge { display: inline; }
 .event-card { display: block; }
 
-
 /* Part F — responsive images and media query */
 img { max-width: 100%; height: auto; }
 
@@ -146,3 +145,50 @@ img { max-width: 100%; height: auto; }
 a[href^="mailto:"] {
   font-weight: 600;
 } /* bolds any link whose href starts with "mailto:", making email links stand out */
+
+/* ---------- Practical IV: JavaScript-required styles ---------- */
+.error {
+  color: #b91c1c;
+  font-size: 0.9rem;
+  display: block;
+  margin-top: 0.25rem;
+}
+
+.sold-out-card {
+  opacity: 0.85;
+}
+
+.sold-out-card .card-title {
+  text-decoration: line-through;
+}
+
+body.dark {
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+body.dark header,
+body.dark footer {
+  background: #020617;
+}
+
+body.dark .card,
+body.dark .intro {
+  background: #1e293b;
+  color: #e2e8f0;
+  border-color: #334155;
+}
+
+body.dark h1,
+body.dark h2 {
+  color: #7dd3fc;
+}
+
+.seats-hint {
+  font-size: 0.95rem;
+  color: #0369a1;
+}
+
+.is-invalid {
+  border-color: #b91c1c;
+}
